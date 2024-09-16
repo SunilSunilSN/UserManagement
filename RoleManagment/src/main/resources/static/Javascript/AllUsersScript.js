@@ -12,20 +12,27 @@ function saveRole(userId) {
 	var selectedRoles = Array.from(dropdown.selectedOptions).map(option => parseInt(option.value));
 	console.log("Saving roles for user " + userId + ": " + selectedRoles);
 
-	// Perform an AJAX call or form submission to save the selected roles
-	$.ajax({
-		url: `/UpdateRole/${userId}`,
-		type: 'POST',
-		data: { roles: selectedRoles },
-		success: function(response) {
-			alert('Roles updated successfully');
-			$(`#role-text-${userId}`).text(selectedRoles.join(', '));
-			showDropdown(userId);
+	// Send role data using fetch
+	fetch(`/UpdateRole/${userId}`, {
+		method: 'POST',
+		headers: {
+			'Content-Type': 'application/json',
 		},
-		error: function() {
+		body: JSON.stringify(selectedRoles
+		),
+	})
+		.then(response => {
+			if (response.ok) {
+				alert('Roles updated successfully');
+				window.location.reload(); // Optionally reload page to see changes
+			} else {
+				alert('Failed to update roles');
+			}
+		})
+		.catch(error => {
+			console.error('Error updating roles:', error);
 			alert('Error updating roles');
-		}
-	});
+		});
 }
 
 // Hide the dropdown after saving roles
