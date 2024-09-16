@@ -1,0 +1,57 @@
+2024-09-09 16:37:09.725802+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if exists [*]user cascade "; expected "identifier"; SQL statement:
+drop table if exists user cascade  [42001-224]
+2024-09-09 16:37:09.736896+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (user_id bigint not null, name varchar(255), password varchar(255), user_name varchar(255) unique, roles varchar(255) array, primary key (user_id))"; expected "identifier"; SQL statement:
+create table user (user_id bigint not null, name varchar(255), password varchar(255), user_name varchar(255) unique, roles varchar(255) array, primary key (user_id)) [42001-224]
+2024-09-09 16:38:11.628438+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if exists [*]user cascade "; expected "identifier"; SQL statement:
+drop table if exists user cascade  [42001-224]
+2024-09-09 16:38:11.639537+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (user_id bigint not null, name varchar(255), password varchar(255), user_name varchar(255) unique, roles varchar(255) array, primary key (user_id))"; expected "identifier"; SQL statement:
+create table user (user_id bigint not null, name varchar(255), password varchar(255), user_name varchar(255) unique, roles varchar(255) array, primary key (user_id)) [42001-224]
+2024-09-09 16:41:41.200566+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if exists [*]user cascade "; expected "identifier"; SQL statement:
+drop table if exists user cascade  [42001-224]
+2024-09-09 16:41:41.213567+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (user_id bigint not null, name varchar(255), password varchar(255), user_name varchar(255) unique, roles varchar(255) array, primary key (user_id))"; expected "identifier"; SQL statement:
+create table user (user_id bigint not null, name varchar(255), password varchar(255), user_name varchar(255) unique, roles varchar(255) array, primary key (user_id)) [42001-224]
+2024-09-09 16:42:07.356607+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if exists [*]user cascade "; expected "identifier"; SQL statement:
+drop table if exists user cascade  [42001-224]
+2024-09-09 16:42:07.368624+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (user_id bigint not null, name varchar(255), password varchar(255), user_name varchar(255) unique, roles varchar(255) array, primary key (user_id))"; expected "identifier"; SQL statement:
+create table user (user_id bigint not null, name varchar(255), password varchar(255), user_name varchar(255) unique, roles varchar(255) array, primary key (user_id)) [42001-224]
+2024-09-09 16:44:35.174219+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if exists [*]user cascade "; expected "identifier"; SQL statement:
+drop table if exists user cascade  [42001-224]
+2024-09-09 16:44:35.185226+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (user_id bigint not null, name varchar(255), password varchar(255), user_name varchar(255) unique, roles varchar(255) array, primary key (user_id))"; expected "identifier"; SQL statement:
+create table user (user_id bigint not null, name varchar(255), password varchar(255), user_name varchar(255) unique, roles varchar(255) array, primary key (user_id)) [42001-224]
+2024-09-09 16:46:23.066878+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if exists [*]user cascade "; expected "identifier"; SQL statement:
+drop table if exists user cascade  [42001-224]
+2024-09-09 16:46:23.077775+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (user_id bigint not null, name varchar(255), password varchar(255), user_name varchar(255) unique, roles varchar(255) array, primary key (user_id))"; expected "identifier"; SQL statement:
+create table user (user_id bigint not null, name varchar(255), password varchar(255), user_name varchar(255) unique, roles varchar(255) array, primary key (user_id)) [42001-224]
+2024-09-09 17:21:54.050066+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if exists [*]user cascade "; expected "identifier"; SQL statement:
+drop table if exists user cascade  [42001-224]
+2024-09-09 17:21:54.064269+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (user_id bigint not null, name varchar(255), password varchar(255), user_name varchar(255) unique, roles varchar(255) array, primary key (user_id))"; expected "identifier"; SQL statement:
+create table user (user_id bigint not null, name varchar(255), password varchar(255), user_name varchar(255) unique, roles varchar(255) array, primary key (user_id)) [42001-224]
+2024-09-09 17:23:19.209623+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if exists [*]user cascade "; expected "identifier"; SQL statement:
+drop table if exists user cascade  [42001-224]
+2024-09-09 17:23:19.222669+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (user_id bigint not null, name varchar(255), password varchar(255), user_name varchar(255) unique, roles varchar(255) array, primary key (user_id))"; expected "identifier"; SQL statement:
+create table user (user_id bigint not null, name varchar(255), password varchar(255), user_name varchar(255) unique, roles varchar(255) array, primary key (user_id)) [42001-224]
+2024-09-09 17:24:40.347960+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "select u1_0.user_id,u1_0.name,u1_0.password,u1_0.roles,u1_0.user_name from [*]user u1_0 where u1_0.user_name=?"; expected "identifier"; SQL statement:
+select u1_0.user_id,u1_0.name,u1_0.password,u1_0.roles,u1_0.user_name from user u1_0 where u1_0.user_name=? [42001-224]
+2024-09-09 17:51:13.048590+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if exists [*]user cascade "; expected "identifier"; SQL statement:
+drop table if exists user cascade  [42001-224]
+2024-09-09 17:51:13.057491+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (user_id bigint not null, name varchar(255), password varchar(255), user_name varchar(255) unique, roles varchar(255) array, primary key (user_id))"; expected "identifier"; SQL statement:
+create table user (user_id bigint not null, name varchar(255), password varchar(255), user_name varchar(255) unique, roles varchar(255) array, primary key (user_id)) [42001-224]

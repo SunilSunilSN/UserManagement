@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Create New Employee</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+</head>
+<body>
+	<table class="table table-hover">
+		<thead>
+			<tr>
+				<th scope="col">Full Name</th>
+				<th scope="col">User Name</th>
+				<th scope="col">Role</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="user : ${usersList}" class="table-active">
+				<th scope="row" th:text="${user.fullName}">Active</th>
+				<td th:text="${user.username}">Column content</td>
+				<td><span th:id="'role-text-' + ${user.id}"
+					th:if="${#lists.isEmpty(user.roles)}">No role</span> <span
+					th:id="'role-text-' + ${user.id}"
+					th:if="${!#lists.isEmpty(user.roles)}"> <span
+						th:each="role, iterStat : ${user.roles}"> <span
+							th:text="${role.name}"></span> <span th:if="${!iterStat.last}">,
+						</span> <!-- Add comma between roles -->
+					</span>
+				</span>
+
+
+
+					<button type="button" class="btn btn-primary"
+						th:id="'role-editBtn-' + ${user.id}"
+						th:onclick="'showDropdown(' + ${user.id} + ')'">Edit</button> <select
+					class="form-control" th:id="'role-dropdown-' + ${user.id}"
+					multiple="multiple" style="display: none;">
+						<option th:each="role : ${roleList}" th:value="${role.id}"
+							th:text="${role.name}" th:selected="${user.roles.contains(role)}">
+						</option>
+				</select>
+
+					<button type="button" class="btn btn-success"
+						th:id="'save-btn-' + ${user.id}" style="display: none;"
+						th:onclick="'saveRole(' + ${user.id} + ')'">Save</button></td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="/Javascript/AllUsersScript.js"></script>
+<!-- External JS file -->
+
+</html>
